@@ -39,3 +39,15 @@ Feature: ilk feature file
     public WebElement popUpAccept;
     @FindBy(name = "q")
     public WebElement searchBox;
+
+    ------------Scenario Outline --------------
+    #Scenario -> Scenario Outline
+    #"" -> "<sutun_isimi>"
+    #Example kelimesi Scenario Outline dan sonra kullanilir
+    #Example verilerin kullanildigi yerdir
+    ------------------
+    Scenario Outline Data Driven Testing icin kullanilir
+    Yani benzer scenario yu tekrar tekrar farkli datalarda calistirmak icin kullanilir
+    Scenario Outline Cucumber icin cok onemlidir
+    Ne zaman birden fazla data ile islem yaparsak, zaman scenario outline kullanabiliriz.
+    Scenario Outline Excel ile atomasyon yapmaya benzer, tek fark, kullanimi daha kolaydir
