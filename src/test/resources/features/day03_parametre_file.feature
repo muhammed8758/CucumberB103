@@ -1,5 +1,6 @@
 @parametre
 Feature: arama_feature
+  @regression
 
  Background: googlea_git
    Given kullanici google gider

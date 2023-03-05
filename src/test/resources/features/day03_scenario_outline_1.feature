@@ -1,5 +1,6 @@
 @scenario_outline_1
 Feature: arama_feature_2
+  @smoke
   Background: googlea_git
     Given kullanici google gider
   Scenario Outline: arama_testi
