@@ -12,27 +12,34 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     </properties>
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+        NOTE: Pomda olan hiçbir şeyi silme
+         1.dependencies tagi olustur
+         2.dependency leri ekle -->
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.8.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.3.2</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.11.1</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -40,6 +47,7 @@
             <version>7.11.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
@@ -51,12 +59,16 @@
             <artifactId>poi</artifactId>
             <version>4.1.2</version>
         </dependency>
-
-
-
-
+        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.6.0</version>
+        </dependency>
     </dependencies>
-    <!-- PLUGINGS -->
+    <!--    PLUG INS-->
+    <!-- https://maven.apache.org/surefire/maven-surefire-plugin/
+    https://maven.apache.org/surefire/maven-surefire-plugin/examples/cucumber.html -->
     <build>
         <plugins>
             <plugin>
@@ -91,10 +103,11 @@
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.0.0</version>
+                <version>5.7.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>
@@ -116,10 +129,9 @@
                     </execution>
                 </executions>
             </plugin>
+
+
         </plugins>
-
     </build>
-
-
 
 </project>

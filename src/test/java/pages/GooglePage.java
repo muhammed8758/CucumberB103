@@ -15,4 +15,5 @@ public class GooglePage {
 
     @FindBy(name = "q")
     public WebElement searchBox;
+
 }

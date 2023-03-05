@@ -31,6 +31,4 @@ public class DataTablesPage {
     public WebElement search;
     @FindBy(xpath = "(//table[@id='example']//td[@class='sorting_1'])[1]")
     public WebElement name;
-
-
 }
